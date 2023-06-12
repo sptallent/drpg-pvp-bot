@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <StackPane fx:id="stackPane" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-image: url(&quot;/images/gui_res/box_bg.png&quot;); -fx-background-color: transparent;" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <children>
+            <BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #FAFAFA; -fx-border-color: #171717; -fx-border-width: 0.2;" StackPane.alignment="TOP_CENTER">
+               <bottom>
+                  <VBox alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="BOTTOM_CENTER">
+                     <children>
+                        <HBox alignment="BOTTOM_CENTER">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Win " textFill="#171717">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="winText" text="0" textFill="#1bae67">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" text="|" textFill="#171717" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="loseText" text="0" textAlignment="RIGHT" textFill="#f80000">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Lose" textAlignment="RIGHT" textFill="#171717">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" />
+                           </padding>
+                        </HBox>
+                        <Button fx:id="actionButton" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-font-family: Arial; -fx-background-color: #0082CF; -fx-background-radius: 15; -fx-text-fill: #FFFFFF; -fx-border-color: #33b5e5; -fx-border-radius: 15; -fx-border-width: 0.5; -fx-font-weight: bold; -fx-font-size: 16;" text="START ( / )" textFill="#171717">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" right="30.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <effect>
+                              <DropShadow color="#171717" height="10.0" radius="4.5" width="10.0" />
+                           </effect>
+                        </Button>
+                        <Label fx:id="statusLabel" alignment="BOTTOM_CENTER" maxWidth="1.7976931348623157E308" text="Not running" textFill="#171717" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Arial Italic" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="20.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </bottom>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <center>
+                   <VBox alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" BorderPane.alignment="TOP_CENTER">
+                     <VBox alignment="TOP_CENTER" maxWidth="1.7976931348623157E308">
+                     <HBox alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: #0082CF; -fx-background-radius: 15; -fx-border-color: #33b5e5; -fx-border-radius: 15; -fx-border-width: 1;" BorderPane.alignment="CENTER">
+                        <children>
+                           <ImageView fitHeight="50.0" fitWidth="50.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 25; -fx-border-radius: 25;" HBox.hgrow="ALWAYS">
+                              <image>
+                                 <Image url="/images/gui_res/agumon_black.gif" />
+                              </image>
+                              <HBox.margin>
+                                 <Insets bottom="10.0" left="10.0" top="10.0" />
+                              </HBox.margin>
+                                 <effect>
+                                    <DropShadow color="WHITE" />
+                                 </effect>
+                           </ImageView>
+                              <VBox alignment="CENTER_LEFT" HBox.hgrow="NEVER">
+                                 <children>
+                                 <Label fx:id="titleLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="PvP Ladder" wrapText="true">
+                                    <font>
+                                       <Font name="Arial Bold" size="16.0" />
+                                    </font>
+                                    <padding>
+                                       <Insets left="20.0" right="20.0" />
+                                    </padding>
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                             <stops>
+                                                <Stop color="WHITE" />
+                                                <Stop color="#f7de3b" offset="0.2988505747126435" />
+                                                <Stop color="#f7aa1b" offset="0.6901686613737802" />
+                                                <Stop color="#f8ac1b" offset="0.7816091954022983" />
+                                                <Stop color="#f79a00" offset="0.8773946360153252" />
+                                                <Stop color="#f79a00" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <effect>
+                                          <DropShadow color="#33b5e5" />
+                                       </effect>
+                                 </Label>
+                                    <Label fx:id="titleLabelTwo" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Bot" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="Arial Bold" size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" right="25.0" />
+                                       </padding>
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                             <stops>
+                                                <Stop color="WHITE" />
+                                                <Stop color="#f6f13a" offset="0.26436781609195364" />
+                                                <Stop color="#f6f13a" offset="0.48327210964964207" />
+                                                <Stop color="#f6f13a" offset="0.5823754789272029" />
+                                                <Stop color="#b0cf01" offset="0.8773946360153252" />
+                                                <Stop color="#b0cf01" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <effect>
+                                          <DropShadow color="#33b5e5" />
+                                       </effect>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                        </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                     </HBox>
+                     </VBox>
+                   <HBox alignment="CENTER" fillHeight="false" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER" VBox.vgrow="NEVER">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" minWidth="75.0" style="-fx-text-fill: #FFA67B; -fx-background-color: #0082CF; -fx-border-color: #33b5e5; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-width: 1;" styleClass="frontLabel" text="Skill:" textAlignment="RIGHT" textFill="#171717" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                              <padding>
+                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                              </padding>
+                        </Label>
+                        <ComboBox fx:id="skillComboBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" promptText="Select Skill" styleClass="combo" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                        <VBox.margin>
+                           <Insets top="10.0" />
+                        </VBox.margin>
+                  </HBox>
+                     <HBox alignment="CENTER" fillHeight="false" maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER">
+                        <children>
+                           <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" minWidth="75.0" style="-fx-border-color: #33b5e5; -fx-background-color: #0082CF; -fx-text-fill: #FFA67B; -fx-border-radius: 15; -fx-background-radius: 15;" styleClass="frontLabel" text="Slot #1:" textAlignment="RIGHT" textFill="#171717" HBox.hgrow="ALWAYS">
+                              <HBox.margin>
+                                 <Insets />
+                              </HBox.margin>
+                              <font>
+                                 <Font name="Arial Bold" size="14.0" />
+                              </font>
+                              <padding>
+                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                              </padding>
+                           </Label>
+                           <ComboBox fx:id="slotOneComboBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" nodeOrientation="LEFT_TO_RIGHT" promptText="Select 1st Card Slot" styleClass="combo" HBox.hgrow="ALWAYS">
+                              <HBox.margin>
+                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                              </HBox.margin>
+                           </ComboBox>
+                        </children>
+                        <VBox.margin>
+                           <Insets />
+                        </VBox.margin>
+                     </HBox>
+                     <HBox alignment="CENTER" fillHeight="false" maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER">
+                        <children>
+                           <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" minWidth="75.0" style="-fx-border-color: #33b5e5; -fx-background-color: #0082CF; -fx-text-fill: #FFA67B; -fx-border-radius: 15; -fx-background-radius: 15;" styleClass="frontLabel" text="Slot #2:" textAlignment="RIGHT" HBox.hgrow="ALWAYS">
+                              <font>
+                                 <Font name="Arial Bold" size="14.0" />
+                              </font>
+                              <padding>
+                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                              </padding>
+                           </Label>
+                           <ComboBox fx:id="slotTwoComboBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" promptText="Select 2nd Card Slot" styleClass="combo" HBox.hgrow="ALWAYS">
+                              <HBox.margin>
+                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                              </HBox.margin>
+                           </ComboBox>
+                        </children>
+                        <VBox.margin>
+                           <Insets />
+                        </VBox.margin>
+                     </HBox>
+                     <HBox alignment="CENTER" fillHeight="false" maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER">
+                        <children>
+                           <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" minWidth="75.0" style="-fx-border-color: #33b5e5; -fx-background-color: #0082CF; -fx-text-fill: #FFA67B; -fx-background-radius: 15; -fx-border-radius: 15;" styleClass="frontLabel" text="Slot #3:" textAlignment="RIGHT" textFill="#171717" HBox.hgrow="ALWAYS">
+                              <font>
+                                 <Font name="Arial Bold" size="14.0" />
+                              </font>
+                              <padding>
+                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                              </padding>
+                           </Label>
+                           <ComboBox fx:id="slotThreeComboBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" promptText="Select 3rd Card Slot" styleClass="combo" HBox.hgrow="ALWAYS">
+                              <HBox.margin>
+                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                              </HBox.margin>
+                           </ComboBox>
+                        </children>
+                     </HBox>
+                     <VBox alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER">
+                        <children>
+                           <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER">
+                              <children>
+                                 <ToggleButton fx:id="megaToggle" contentDisplay="CENTER" mnemonicParsing="false" selected="true" text="Mega" textAlignment="CENTER" textFill="#171717">
+                                    <font>
+                                       <Font name="Arial" size="12.0" />
+                                    </font>
+                                    <HBox.margin>
+                                       <Insets right="15.0" />
+                                    </HBox.margin>
+                                    <padding>
+                                       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                    </padding>
+                                 </ToggleButton>
+                                 <ToggleButton fx:id="runToggle" contentDisplay="CENTER" mnemonicParsing="false" text="Run Away" textFill="#171717">
+                                    <font>
+                                       <Font name="Arial" size="12.0" />
+                                    </font>
+                                    <HBox.margin>
+                                       <Insets left="15.0" />
+                                    </HBox.margin>
+                                    <padding>
+                                       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                    </padding>
+                                 </ToggleButton>
+                              </children>
+                              <padding>
+                                 <Insets bottom="10.0" top="10.0" />
+                              </padding>
+                           </HBox>
+                        </children>
+                     </VBox>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+               </VBox>
+               </center>
+               <StackPane.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" />
+               </StackPane.margin>
+               <effect>
+                  <DropShadow color="#171717" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </BorderPane>
+            <ImageView fx:id="confettiImg" fitHeight="563.0" fitWidth="100.0" preserveRatio="true" visible="false" StackPane.alignment="CENTER">
+               <image>
+                  <Image url="/images/gui_res/confetti.gif" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </children>
+      </StackPane>
+      <MenuBar fx:id="topMenuBar" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="closeButton" mnemonicParsing="false" onAction="#handleExitAction" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="aboutButton" mnemonicParsing="false" onAction="#handleAboutAction" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
