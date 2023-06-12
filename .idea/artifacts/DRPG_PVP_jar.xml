@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DRPG_PVP:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DRPG_PVP_jar</output-path>
+    <root id="archive" name="DRPG_PVP.jar">
+      <element id="module-output" name="DRPG_PVP" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-swing-18.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-graphics-18.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-base-18.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-graphics-19-ea+8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-base-19-ea+8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jai-imageio-core-1.4.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-web-18.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-controls-18.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-graphics-18.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-base-18.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-media-18.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-fxml-19-ea+8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javafx-controls-19-ea+8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
