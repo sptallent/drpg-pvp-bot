@@ -23,7 +23,7 @@ The bot is built using Java and utilizes JavaFX for the user interface.
 
 To get started with the Digimon PvP Bot, follow these steps:
 
-1. Clone the repository: ```git clone https://github.com/your-username/digimon-pvp-bot.git```
+1. Clone the repository: ```git clone https://github.com/sptallent/drpg-pvp-bot.git```
 
 2. Install Java if you haven't already. You can download it from the official Java website: [https://www.java.com](https://www.java.com)
 
