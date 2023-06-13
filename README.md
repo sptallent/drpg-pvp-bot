@@ -17,7 +17,7 @@ The bot is built using Java and utilizes JavaFX for the user interface.
 
 - Java 8 or higher: The core programming language used for developing the Digimon PvP Bot.
 - JavaFX: A Java library used for creating the user interface (UI) of the application.
-- -JNativeHook: A Java library that provides global keyboard and mouse hooking capabilities, allowing the bot to listen to and simulate keyboard events during battles.
+- JNativeHook: A Java library that provides global keyboard and mouse hooking capabilities, allowing the bot to listen to and simulate keyboard events during battles.
 
 ## Getting Started
 
