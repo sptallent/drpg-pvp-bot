@@ -71,8 +71,8 @@ If you would like to contribute code, you can follow these steps:
 
 ## License
 
-[MIT License](LICENSE)
+[MIT License](LICENSE.md)
 
 ## Contact
 
-If you have any questions or inquiries about the Digimon PvP Bot project, you can reach us at [samuel.tallent00@gmail.com].
+If you have any questions or inquiries about the Digimon PvP Bot project, you can reach us at samuel.tallent00@gmail.com
