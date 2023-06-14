@@ -47,7 +47,7 @@ To get started with the Digimon PvP Bot, follow these steps:
 
 6. Monitor the bot's progress and adjust settings as needed.
 
-7. Stop the bot whenever you want.
+7. Stop the bot whenever you want with a forward slash```/```.
 
 ## Contributing
 
